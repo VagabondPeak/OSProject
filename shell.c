@@ -13,3 +13,11 @@ void printPrompt()
   printf("osshell$ ");
   fflush(stdout);
 }
+
+
+//function to read the input
+void readCommand(char *buffer)
+{
+  fgets(buffer, LINE, stdin);
+  
+}
