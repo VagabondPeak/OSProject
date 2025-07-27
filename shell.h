@@ -13,8 +13,14 @@
 #define NULL ((void *)0)
 #endif
   
-struct commmand_t {
+struct command_t {
   char *name;
   int argc;
   char *argv[MAX_ARGS];
 }
+void readCommand(char* inputBuffer);
+void parseCommand(char* inputBuffer, command_t* cmd);
+int parsePath(char* dir[]);
+char* lookupPath(char* cmdName, char* dir[]);
+
+#endif
