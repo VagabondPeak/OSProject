@@ -1,13 +1,18 @@
-//head file to define some variables
+//head file to define some variables constants, a struct for command
 
-#define LINE 80
-#define MAX_ARGS 64
-#define MAX_ARG_LEN 16
-#define MAX_PATHS 64
-#define MAX_PATH_LEN 96
-#define WHITESPACE " \t\n"
-#define TRUE 1
 
+#define LINE 80 //max line length
+#define MAX_ARGS 64 //max num of args
+#define MAX_ARG_LEN 16 //max arg length
+#define MAX_PATHS 64 //max num of paths
+#define MAX_PATH_LEN 96 //max path length
+#define WHITESPACE " \t\n" //whitespace separators
+#define TRUE 1 //make a true value 1
+
+#ifndef NULL
+#define NULL ((void *)0)
+#endif
+  
 struct commmand_t {
   char *name;
   int argc;
